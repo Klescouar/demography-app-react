@@ -2,11 +2,11 @@ import axios from 'axios'
 
 export const GET_COUNTRIES = 'GET_COUNTRIES'
 export const ERROR_GET_COUNTRIES = 'ERROR_GET_COUNTRIES'
+export const GET_MORTALITY = 'GET_MORTALITY';
+export const ERROR_GET_MORTALITY = 'ERROR_GET_MORTALITY'
 
 const API_END_POINT = 'http://api.population.io:80/1.0';
 const DEFAULT_PARAMS = '25/today';
-const GET_MORTALITY = 'GET_MORTALITY';
-const ERROR_GET_MORTALITY = 'ERROR_GET_MORTALITY'
 
 export function getCountries(){
   return (dispatch) => {
